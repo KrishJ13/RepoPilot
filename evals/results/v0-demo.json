@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-10-16T00:49:02.040989+00:00",
+  "mode": "handwritten-fake-output",
+  "workload": "One synthetic README, ten manual review questions; not ten independent tasks",
+  "source": {
+    "name": "learning/demo-notes",
+    "description": "A command-line notes application",
+    "language": "Python",
+    "repository_url": "https://github.com/learning/demo-notes",
+    "readme_url": "https://github.com/learning/demo-notes/blob/main/README.md",
+    "readme_truncated": false,
+    "readme": "# Demo Notes\nA Python command-line application for adding and listing notes.\n## Install\npip install -e .\n## Run\npython -m demo_notes\n## Features\nAdd notes and list saved notes. Notes are stored in a local JSON file.\n## Limitations\nSingle-user only. No cloud synchronisation.\n"
+  },
+  "response": {
+    "summary": {
+      "name": "learning/demo-notes",
+      "purpose": "A command-line notes application",
+      "main_features": [
+        "Add notes",
+        "List saved notes",
+        "Store notes in a local JSON file"
+      ],
+      "technologies": [
+        "Python"
+      ],
+      "how_to_run": "Install: pip install -e .\nRun: python -m demo_notes. Docker instructions are not stated.",
+      "limitations": [
+        "Single-user only",
+        "No cloud synchronisation"
+      ]
+    },
+    "repository_url": "https://github.com/learning/demo-notes",
+    "readme_url": "https://github.com/learning/demo-notes/blob/main/README.md",
+    "readme_truncated": false,
+    "model": "gpt-4o-mini",
+    "prompt_version": "v0-summary-1",
+    "llm_calls": 1,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 0.0
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "question": "What is the repository name?",
+      "field": "name",
+      "expected": "learning/demo-notes",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 2,
+      "question": "What does it do?",
+      "field": "purpose",
+      "expected": "A command-line notes application",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 3,
+      "question": "Which language is used?",
+      "field": "technologies",
+      "expected": "Python",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 4,
+      "question": "Can users add notes?",
+      "field": "main_features",
+      "expected": "Add notes",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 5,
+      "question": "Can users list saved notes?",
+      "field": "main_features",
+      "expected": "List notes",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 6,
+      "question": "How is it installed?",
+      "field": "how_to_run",
+      "expected": "pip install -e .",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 7,
+      "question": "How is it started?",
+      "field": "how_to_run",
+      "expected": "python -m demo_notes",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 8,
+      "question": "How are notes stored?",
+      "field": "main_features",
+      "expected": "Local JSON file; do not invent a database",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 9,
+      "question": "Does it support multiple users or cloud sync?",
+      "field": "limitations",
+      "expected": "Single-user only; no cloud sync",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    },
+    {
+      "id": 10,
+      "question": "Is Docker installation documented?",
+      "field": "how_to_run",
+      "expected": "No; do not invent Docker commands",
+      "correct": null,
+      "unsupported_claims": null,
+      "notes": "Awaiting manual review"
+    }
+  ],
+  "cost": null,
+  "quality_score": null
+}

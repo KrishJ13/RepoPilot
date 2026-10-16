@@ -1,0 +1,10 @@
+2026-10-16: one diagnostic summary attempt inside the user's running API container.
+Only safe identifiers were printed; no credential or raw provider message saved.
+API key configured: True
+Model: gpt-4o-mini
+GitHub fetch: succeeded
+Exception class: RateLimitError
+HTTP status: 429
+code: credit_balance_exhausted
+type: insufficient_quota
+No successful model response or answer-quality measurement obtained.

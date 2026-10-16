@@ -1,0 +1,12 @@
+[
+  {"id": 1, "question": "What is the repository name?", "field": "name", "expected": "learning/demo-notes"},
+  {"id": 2, "question": "What does it do?", "field": "purpose", "expected": "A command-line notes application"},
+  {"id": 3, "question": "Which language is used?", "field": "technologies", "expected": "Python"},
+  {"id": 4, "question": "Can users add notes?", "field": "main_features", "expected": "Add notes"},
+  {"id": 5, "question": "Can users list saved notes?", "field": "main_features", "expected": "List notes"},
+  {"id": 6, "question": "How is it installed?", "field": "how_to_run", "expected": "pip install -e ."},
+  {"id": 7, "question": "How is it started?", "field": "how_to_run", "expected": "python -m demo_notes"},
+  {"id": 8, "question": "How are notes stored?", "field": "main_features", "expected": "Local JSON file; do not invent a database"},
+  {"id": 9, "question": "Does it support multiple users or cloud sync?", "field": "limitations", "expected": "Single-user only; no cloud sync"},
+  {"id": 10, "question": "Is Docker installation documented?", "field": "how_to_run", "expected": "No; do not invent Docker commands"}
+]

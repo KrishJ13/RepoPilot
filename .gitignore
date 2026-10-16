@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+
+AGENTS.md
+CHAT_HANDOVER.md
+CODEX_WORKFLOW.md
+CURRENT_STATE.md
+LEARNING_LOG.md
+METRICS.md
+PROJECT_SPEC.md
+REVIEW_CHECKLIST.md
+TEACHING_STYLE.md
+VERSION_PLAN.md

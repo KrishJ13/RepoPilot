@@ -1,0 +1,7 @@
+2026-10-16: docker compose config --quiet: success
+Both images built; docker compose up -d: success
+API: 200 {'status': 'ok'}
+Streamlit: 200 ok
+Analysis without a configured API key: 400 {'detail': 'Set OPENAI_API_KEY in .env before analysing a repository.'}
+docker compose down: both containers and project network removed
+No live model generation was performed.

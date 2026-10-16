@@ -1,0 +1,64 @@
+ Image repopilot-ui Building 
+ Image repopilot-api Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 921B done
+#1 DONE 0.0s
+
+#2 [ui internal] load build definition from Dockerfile
+#2 transferring dockerfile: 267B done
+#2 DONE 0.0s
+
+#3 [ui internal] load metadata for docker.io/library/python:3.13-slim
+#3 DONE 0.6s
+
+#4 [ui internal] load .dockerignore
+#4 transferring context: 88B done
+#4 DONE 0.0s
+
+#5 [api internal] load build context
+#5 transferring context: 11.58kB done
+#5 DONE 0.0s
+
+#6 [api 1/5] FROM docker.io/library/python:3.13-slim@sha256:70729b46c69b4f1e97c4822c1af3df53a1476cf5ddc6c087c0c10bc3a5678c2f
+#6 resolve docker.io/library/python:3.13-slim@sha256:70729b46c69b4f1e97c4822c1af3df53a1476cf5ddc6c087c0c10bc3a5678c2f 0.0s done
+#6 DONE 0.0s
+
+#7 [api 3/5] COPY requirements.txt .
+#7 CACHED
+
+#8 [api 2/5] WORKDIR /app
+#8 CACHED
+
+#9 [api 4/5] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [api 5/5] COPY repopilot repopilot
+#10 DONE 0.0s
+
+#11 [api] exporting to image
+#11 exporting layers 0.0s done
+#11 exporting manifest sha256:87b1c793943d6855004a80b74287b4b06272f214d172e621499daa168a9104ce done
+#11 exporting config sha256:d5ca9ceac963de6cfde2ff5ea783a23079cfa1d5fa1f59f3e4f6ccd6573974a6 done
+#11 exporting attestation manifest sha256:9e5b610bf2386235c8d8ae682ef521ee5171f3d1845311fab1548ea5b8fa2921 done
+#11 exporting manifest list sha256:ec87ceca21ad09207bc4ba629d9e08ff5422b895c63a7101df7c820bec7ff0f2 done
+#11 naming to docker.io/library/repopilot-api:latest done
+#11 unpacking to docker.io/library/repopilot-api:latest done
+#11 DONE 0.1s
+
+#12 [ui] exporting to image
+#12 exporting layers 0.0s done
+#12 exporting manifest sha256:dca5f18ffe20b0c1ac2b2fa953e92d18be97a18290c548459fc529b239b508bc done
+#12 exporting config sha256:eed31a8a80f4d7a4aecc8cfda1a29adb110eccb31ae138625dc2709a38a27ccb done
+#12 exporting attestation manifest sha256:790771963dab072943a3eae35416ee8ecbcbc6c198a3c34a811411950e4e6fca done
+#12 exporting manifest list sha256:6992ed907748d0d9592c8b4d18c43223296f21c590a0ff2664bbebfa67ab5fc9 done
+#12 naming to docker.io/library/repopilot-ui:latest done
+#12 unpacking to docker.io/library/repopilot-ui:latest done
+#12 DONE 0.1s
+
+#13 [api] resolving provenance for metadata file
+#13 DONE 0.0s
+
+#14 [ui] resolving provenance for metadata file
+#14 DONE 0.0s
+ Image repopilot-ui Built 
+ Image repopilot-api Built 

@@ -1,0 +1,9 @@
+{
+  "name": "learning/demo-notes",
+  "description": "A command-line notes application",
+  "language": "Python",
+  "repository_url": "https://github.com/learning/demo-notes",
+  "readme_url": "https://github.com/learning/demo-notes/blob/main/README.md",
+  "readme_truncated": false,
+  "readme": "# Demo Notes\nA Python command-line application for adding and listing notes.\n## Install\npip install -e .\n## Run\npython -m demo_notes\n## Features\nAdd notes and list saved notes. Notes are stored in a local JSON file.\n## Limitations\nSingle-user only. No cloud synchronisation.\n"
+}
