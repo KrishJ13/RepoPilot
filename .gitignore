@@ -4,6 +4,7 @@ __pycache__/
 .pytest_cache/
 *.pyc
 .DS_Store
+evals/results
 
 AGENTS.md
 CHAT_HANDOVER.md
@@ -15,3 +16,4 @@ PROJECT_SPEC.md
 REVIEW_CHECKLIST.md
 TEACHING_STYLE.md
 VERSION_PLAN.md
+.model-cache/

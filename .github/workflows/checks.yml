@@ -1,4 +1,4 @@
-name: V0 checks
+name: RepoPilot checks
 on: [push, pull_request]
 jobs:
   test-and-build:
@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
+      - run: pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
       - run: pip install -r requirements-dev.txt
       - run: python -m pytest -q
-      - run: docker build -t repopilot-v0 .
+      - run: docker build -t repopilot .

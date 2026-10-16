@@ -1,6 +1,7 @@
 """The API coordinates fetching and summarising; the UI only calls this API."""
 
 from time import perf_counter
+from contextlib import contextmanager
 
 import httpx
 from dotenv import load_dotenv
@@ -10,9 +11,12 @@ from openai import OpenAIError, RateLimitError
 from repopilot.github import fetch_repository
 from repopilot.llm import summarise
 from repopilot.models import SummaryRequest, SummaryResponse
+from repopilot.rag_models import AskRequest, AskResponse, IndexResponse
+from repopilot.rag import index_repository, ask_repository, EmbeddingUnavailable
+from repopilot.store import StoreUnavailable
 
 load_dotenv()
-app = FastAPI(title="RepoPilot V0", version="0.1.0")
+app = FastAPI(title="RepoPilot V1", version="1.0.0")
 
 
 @app.get("/health")
@@ -20,13 +24,13 @@ def health():
     return {"status": "ok"}
 
 
-@app.post("/api/v1/repositories/summary", response_model=SummaryResponse)
-def repository_summary(request: SummaryRequest):
-    started = perf_counter()
+@contextmanager
+def upstream_errors():
+    """Use the same safe service-error messages for all three endpoints."""
     try:
-        result = summarise(fetch_repository(request.repository_url))
-        result.elapsed_seconds = round(perf_counter() - started, 3)
-        return result
+        yield
+    except (StoreUnavailable, EmbeddingUnavailable) as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
     except ValueError as error:
         raise HTTPException(status_code=400, detail=str(error)) from error
     except httpx.HTTPStatusError as error:
@@ -44,3 +48,24 @@ def repository_summary(request: SummaryRequest):
     except OpenAIError as error:
         # Don't echo upstream exceptions: they may contain request/credential details.
         raise HTTPException(status_code=502, detail="OpenAI request failed. Check the API key, model access and connectivity.") from error
+
+
+@app.post("/api/v1/repositories/summary", response_model=SummaryResponse)
+def repository_summary(request: SummaryRequest):
+    started = perf_counter()
+    with upstream_errors():
+        result = summarise(fetch_repository(request.repository_url))
+        result.elapsed_seconds = round(perf_counter() - started, 3)
+        return result
+
+
+@app.post("/api/v1/repositories/index", response_model=IndexResponse)
+def repository_index(request: SummaryRequest):
+    with upstream_errors():
+        return index_repository(request.repository_url)
+
+
+@app.post("/api/v1/repositories/ask", response_model=AskResponse)
+def repository_ask(request: AskRequest):
+    with upstream_errors():
+        return ask_repository(request)

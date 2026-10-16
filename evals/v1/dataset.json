@@ -1,0 +1,449 @@
+{
+  "version": "v1-1",
+  "provenance": "Hand-authored synthetic repository; URLs are fixture identifiers, not authentic GitHub sources.",
+  "documents": [
+    {
+      "document_id": "readme",
+      "repository": "learning/v1-demo",
+      "document_type": "readme",
+      "title": "README.md",
+      "text": "# Demo Notes\nA small notes application. See the documentation for configuration, commands, releases and issue details.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/README.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "port",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/port.md",
+      "text": "# Port\nThe Demo Notes server listens on port 8123.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/port.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "port_env",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/port_env.md",
+      "text": "# Port Env\nSet NOTE_PORT to override the Demo Notes listening port.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/port_env.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "storage",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/storage.md",
+      "text": "# Storage\nNotes are stored at ~/.demo-notes/notes.json.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/storage.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "format",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/format.md",
+      "text": "# Format\nDemo Notes stores notes using the JSON file format.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/format.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "backup",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/backup.md",
+      "text": "# Backup\nRun demo-notes backup to create a notes backup.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/backup.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "restore",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/restore.md",
+      "text": "# Restore\nRun demo-notes restore backup.json to restore saved notes.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/restore.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "timeout",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/timeout.md",
+      "text": "# Timeout\nThe default request timeout is 12 seconds.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/timeout.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "timeout_env",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/timeout_env.md",
+      "text": "# Timeout Env\nSet NOTE_TIMEOUT_SECONDS to override the request timeout.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/timeout_env.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "python",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/python.md",
+      "text": "# Python\nDemo Notes requires Python 3.12 or newer.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/python.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "install",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/install.md",
+      "text": "# Install\nInstall Demo Notes with pip install demo-notes.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/install.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "start",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/start.md",
+      "text": "# Start\nRun demo-notes serve to start the HTTP server.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/start.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "health",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/health.md",
+      "text": "# Health\nThe health endpoint is GET /healthz.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/health.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "auth",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/auth.md",
+      "text": "# Auth\nThe API requires an X-Notes-Key header on every request.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/auth.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "key_env",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/key_env.md",
+      "text": "# Key Env\nSet NOTE_API_KEY to configure the expected API key.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/key_env.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "export",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/export.md",
+      "text": "# Export\nThe export command writes Markdown files.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/export.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "export_cmd",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/export_cmd.md",
+      "text": "# Export Cmd\nRun demo-notes export --all to export all notes.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/export_cmd.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "limit",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/limit.md",
+      "text": "# Limit\nEach note can contain at most 4096 characters.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/limit.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "sync",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/sync.md",
+      "text": "# Sync\nCloud synchronization is not supported.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/sync.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "release",
+      "repository": "learning/v1-demo",
+      "document_type": "release",
+      "title": "docs/release.md",
+      "text": "# Release\nRelease 0.4.0 introduced the backup command.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/release.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "fix",
+      "repository": "learning/v1-demo",
+      "document_type": "release",
+      "title": "docs/fix.md",
+      "text": "# Fix\nRelease 0.4.1 fixed duplicate note titles.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/fix.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "issue",
+      "repository": "learning/v1-demo",
+      "document_type": "issue",
+      "title": "docs/issue.md",
+      "text": "# Issue\nIssue #17 reports that empty titles crash the add command.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/issue.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "workaround",
+      "repository": "learning/v1-demo",
+      "document_type": "issue",
+      "title": "docs/workaround.md",
+      "text": "# Workaround\nFor issue #17, use a non-empty title as the workaround.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/workaround.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "license",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/license.md",
+      "text": "# License\nDemo Notes is licensed under the MIT license.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/license.md",
+      "metadata": {}
+    },
+    {
+      "document_id": "delete",
+      "repository": "learning/v1-demo",
+      "document_type": "documentation",
+      "title": "docs/delete.md",
+      "text": "# Delete\nRun demo-notes delete NOTE_ID to delete a note by its ID.\nThis page describes one part of the synthetic Demo Notes application. Check this setting when running the local demonstration. Other settings and operations are described on their own pages; this page does not establish their values.",
+      "source_url": "https://github.com/learning/v1-demo/blob/fixture/docs/delete.md",
+      "metadata": {}
+    }
+  ],
+  "cases": [
+    {
+      "id": "q01",
+      "question": "Which port does the Demo Notes server listen on?",
+      "relevant_document_ids": [
+        "port"
+      ],
+      "expected_span": "The Demo Notes server listens on port 8123.",
+      "expected_answer": "8123"
+    },
+    {
+      "id": "q02",
+      "question": "Which environment variable overrides the listening port?",
+      "relevant_document_ids": [
+        "port_env"
+      ],
+      "expected_span": "Set NOTE_PORT to override the Demo Notes listening port.",
+      "expected_answer": "NOTE_PORT"
+    },
+    {
+      "id": "q03",
+      "question": "Where are notes stored on disk?",
+      "relevant_document_ids": [
+        "storage"
+      ],
+      "expected_span": "Notes are stored at ~/.demo-notes/notes.json.",
+      "expected_answer": "~/.demo-notes/notes.json"
+    },
+    {
+      "id": "q04",
+      "question": "What file format stores the notes?",
+      "relevant_document_ids": [
+        "format"
+      ],
+      "expected_span": "Demo Notes stores notes using the JSON file format.",
+      "expected_answer": "JSON"
+    },
+    {
+      "id": "q05",
+      "question": "What command backs up notes?",
+      "relevant_document_ids": [
+        "backup"
+      ],
+      "expected_span": "Run demo-notes backup to create a notes backup.",
+      "expected_answer": "demo-notes backup"
+    },
+    {
+      "id": "q06",
+      "question": "Which command restores a backup?",
+      "relevant_document_ids": [
+        "restore"
+      ],
+      "expected_span": "Run demo-notes restore backup.json to restore saved notes.",
+      "expected_answer": "demo-notes restore backup.json"
+    },
+    {
+      "id": "q07",
+      "question": "What is the default request timeout?",
+      "relevant_document_ids": [
+        "timeout"
+      ],
+      "expected_span": "The default request timeout is 12 seconds.",
+      "expected_answer": "12 seconds"
+    },
+    {
+      "id": "q08",
+      "question": "How do I override the timeout?",
+      "relevant_document_ids": [
+        "timeout_env"
+      ],
+      "expected_span": "Set NOTE_TIMEOUT_SECONDS to override the request timeout.",
+      "expected_answer": "NOTE_TIMEOUT_SECONDS"
+    },
+    {
+      "id": "q09",
+      "question": "What is the minimum supported Python version?",
+      "relevant_document_ids": [
+        "python"
+      ],
+      "expected_span": "Demo Notes requires Python 3.12 or newer.",
+      "expected_answer": "3.12"
+    },
+    {
+      "id": "q10",
+      "question": "How do I install Demo Notes?",
+      "relevant_document_ids": [
+        "install"
+      ],
+      "expected_span": "Install Demo Notes with pip install demo-notes.",
+      "expected_answer": "pip install demo-notes"
+    },
+    {
+      "id": "q11",
+      "question": "What command starts the notes server?",
+      "relevant_document_ids": [
+        "start"
+      ],
+      "expected_span": "Run demo-notes serve to start the HTTP server.",
+      "expected_answer": "demo-notes serve"
+    },
+    {
+      "id": "q12",
+      "question": "What HTTP path checks server health?",
+      "relevant_document_ids": [
+        "health"
+      ],
+      "expected_span": "The health endpoint is GET /healthz.",
+      "expected_answer": "/healthz"
+    },
+    {
+      "id": "q13",
+      "question": "How does the API authenticate requests?",
+      "relevant_document_ids": [
+        "auth"
+      ],
+      "expected_span": "The API requires an X-Notes-Key header on every request.",
+      "expected_answer": "X-Notes-Key"
+    },
+    {
+      "id": "q14",
+      "question": "Where is the expected API key configured?",
+      "relevant_document_ids": [
+        "key_env"
+      ],
+      "expected_span": "Set NOTE_API_KEY to configure the expected API key.",
+      "expected_answer": "NOTE_API_KEY"
+    },
+    {
+      "id": "q15",
+      "question": "Which export format is supported?",
+      "relevant_document_ids": [
+        "export"
+      ],
+      "expected_span": "The export command writes Markdown files.",
+      "expected_answer": "Markdown"
+    },
+    {
+      "id": "q16",
+      "question": "How do I export all notes?",
+      "relevant_document_ids": [
+        "export_cmd"
+      ],
+      "expected_span": "Run demo-notes export --all to export all notes.",
+      "expected_answer": "demo-notes export --all"
+    },
+    {
+      "id": "q17",
+      "question": "How many characters may one note contain?",
+      "relevant_document_ids": [
+        "limit"
+      ],
+      "expected_span": "Each note can contain at most 4096 characters.",
+      "expected_answer": "4096"
+    },
+    {
+      "id": "q18",
+      "question": "Is cloud synchronization supported?",
+      "relevant_document_ids": [
+        "sync"
+      ],
+      "expected_span": "Cloud synchronization is not supported.",
+      "expected_answer": "not supported"
+    },
+    {
+      "id": "q19",
+      "question": "Which release introduced backups?",
+      "relevant_document_ids": [
+        "release"
+      ],
+      "expected_span": "Release 0.4.0 introduced the backup command.",
+      "expected_answer": "0.4.0"
+    },
+    {
+      "id": "q20",
+      "question": "Which release fixed duplicate note titles?",
+      "relevant_document_ids": [
+        "fix"
+      ],
+      "expected_span": "Release 0.4.1 fixed duplicate note titles.",
+      "expected_answer": "0.4.1"
+    },
+    {
+      "id": "q21",
+      "question": "Which issue reports crashes on empty titles?",
+      "relevant_document_ids": [
+        "issue"
+      ],
+      "expected_span": "Issue #17 reports that empty titles crash the add command.",
+      "expected_answer": "#17"
+    },
+    {
+      "id": "q22",
+      "question": "What is the documented empty-title crash workaround?",
+      "relevant_document_ids": [
+        "workaround"
+      ],
+      "expected_span": "For issue #17, use a non-empty title as the workaround.",
+      "expected_answer": "non-empty title"
+    },
+    {
+      "id": "q23",
+      "question": "What license covers Demo Notes?",
+      "relevant_document_ids": [
+        "license"
+      ],
+      "expected_span": "Demo Notes is licensed under the MIT license.",
+      "expected_answer": "MIT"
+    },
+    {
+      "id": "q24",
+      "question": "How do I delete a note by ID?",
+      "relevant_document_ids": [
+        "delete"
+      ],
+      "expected_span": "Run demo-notes delete NOTE_ID to delete a note by its ID.",
+      "expected_answer": "demo-notes delete NOTE_ID"
+    }
+  ]
+}
